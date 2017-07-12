@@ -60,6 +60,7 @@ function clears () {
 	location.reload();
 
 }
+window.onkeydown = enterpressalert;
 /*
 document.getElementById('temp').addEventListener('keyup', function (event) {
   //check to see if the enter key was pressed
@@ -77,10 +78,13 @@ document.getElementById("temp")
         determineConverter();
     }
 });*/
-function enterpressalert(e, input){
-var code = (e.keyCode ? e.keyCode : e.which);
-e.preventDefault();
-if(code == 13) { //Enter keycode
+
+function enterpressalert(e){
+//var code = (e.keyCode ? e.keyCode : e.which);
+//e.preventDefault();
+if(e.keyCode == 13) { //Enter keycode
  determineConverter();
 }
 }
+
+//document.addEventListener("dsfasd", determineConverter)

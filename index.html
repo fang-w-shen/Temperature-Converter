@@ -4,11 +4,11 @@
 		<title>Temperature Converter</title>
 	</head>
 	<body>
-		<form>
+		
 			<fieldset>
 		      <legend>Temperature Settings</legend>
 		      <label for="temperature" >Enter in a Temperature in Celcius or Fahrenheit</label>
-		      <input type="number" name="temperature" id="temp" placeholder=0 onkeypress="enterpressalert(event, this)"> 
+		      <input type="text" id="temp" placeholder="0"> 
 		      <br>
 		      <label for="temperature" >Convert it to either: </label>
 		      <input type="radio" name="temp" id="celc"> Celcius
@@ -16,7 +16,7 @@
 		    </fieldset>
 		    <input type="button" value="Submit" id="converter">
 		    <input type="button" value="Clear" id="clear">
-		</form>
+		
 		<p id="p"></p>
 		<script type="text/javascript" src="converter.js"></script>
 	</body>
